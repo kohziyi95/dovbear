@@ -12,7 +12,7 @@ jobs:
       - name: Deploy
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
-          heroku-api-key: ${{ secrets.heroku_api_key }}
+          heroku_api_key: ${{ secrets.heroku_api_key }}
           heroku_app_name: "dovbear"
           heroku_email: ${{ secrets.email }}
           branch: ${{ github.ref_name }}
